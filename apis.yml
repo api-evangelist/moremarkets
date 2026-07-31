@@ -1,8 +1,24 @@
 aid: moremarkets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/moremarkets.png
 name: MoreMarkets
-description: 'MoreMarkets is a company surfaced as a portfolio company of electric-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: defi. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'MoreMarkets is a self-custodial, cross-chain DeFi yield platform that lets holders of assets
+  like XRP and DOGE earn institutional-grade yield without giving up custody of their funds. It uses Multi-Party
+  Computation (MPC) key management and NEAR chain signatures to lock native assets in onchain vaults (a
+  BoringVault-based architecture with tellers, managers, and principal/receipt/positional tokens) and deploy
+  equivalent tokens across chains into DeFi lending and yield strategies, bridged via Wormhole and the Omni
+  Bridge. In July 2025 it launched the XRP Earn Account and later partnered with Flare for additional XRP
+  yield strategies. Backed by Electric Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/moremarkets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +28,49 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Defi
+- Yield
+- Cross-Chain
+- XRP
+- Staking
+- Vaults
+- Crypto
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/moremarkets-domain-security.yml
+- type: LLMsTxt
+  url: llms/moremarkets-llms.txt
 - type: Website
   url: https://www.moremarkets.xyz/
+- type: Documentation
+  url: https://docs.moremarkets.xyz/
+- type: DeveloperPortal
+  url: https://docs.moremarkets.xyz/developers/api-sdk
+- type: SignUp
+  url: https://app.moremarkets.xyz/
+- type: Blog
+  url: https://moremarkets.medium.com/
+- type: TermsOfService
+  url: https://docs.moremarkets.xyz/resources/terms-of-service
+- type: PrivacyPolicy
+  url: https://docs.moremarkets.xyz/resources/privacy-policy
+- type: Support
+  url: https://docs.moremarkets.xyz/resources/faqs
+- type: X
+  url: https://x.com/moremarketsxyz
+- type: Discord
+  url: https://discord.gg/moretown
